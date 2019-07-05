@@ -81,7 +81,7 @@
 						let userinfo = this.loginForm;
 						this.$store.dispatch('Login', userinfo).then(res => {
 							this.$router.push({ path: '/' })
-							this.$store.dispatch('initLeftMenu'); //设置左边菜单始终为展开状态
+							// this.$store.dispatch('initLeftMenu'); //设置左边菜单始终为展开状态
 						})
 					}
 				});
@@ -112,7 +112,7 @@
 			top: 50%;
 			transform: translateY(-50%);
 		}
-		
+
 	}
 	.manage_tip{
 		margin-bottom:20px;
@@ -153,7 +153,7 @@
 			color:red;
 		}
 	}
-	
+
 	.form-fade-enter-active, .form-fade-leave-active {
 	  	transition: all 1s;
 	}
